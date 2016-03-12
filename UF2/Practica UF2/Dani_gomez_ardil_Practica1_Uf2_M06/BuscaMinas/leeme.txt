@@ -1,0 +1,6 @@
+Faltan algunas cosas:
+-como poner un boton para empezar la partida.
+-contador.
+-Hace todo lo esencial y lo de destapar todos 
+los cuadrados que no tiene minas cerca y los 
+que las tiene con el numero de minas pegadas a el.

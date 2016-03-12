@@ -1,0 +1,38 @@
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<title>Simon dice</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/estilo.css">
+	</head>
+	<body>
+		<section class="jumbotron">
+			<div class="container text-center">
+				<h1>Simon Dice</h1>
+			</div>
+		</section>
+		<section class="main container">
+			<center>
+				<div class="row">
+					<div class="col-md-12">
+						<input id ="inicio" class="btn btn-default" type = "button" value="Iniciar" onclick = "iniciar()"/>
+						<input id ="reset" class="btn btn-default" type = "button" value="Volver a intentar" onclick = "reset()"/>
+					</div>
+					<div class="col-md-6">
+						<center>
+							<br />
+							<canvas id="pantalla" width="300px" height="300px"></canvas>
+						</center>
+					</div>
+					<div class="col-md-6">
+						<center>
+							<div id="botones"></div>
+						</center>
+					</div>
+				</div>
+			</center>
+		</section>
+		<script type="text/javascript" src="js/funciones.js"></script>
+	</body>
+</html>

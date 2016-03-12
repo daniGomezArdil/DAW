@@ -1,0 +1,14 @@
+var prueba=function(){
+  this.value="PULSADO";
+};
+var prueba2=function(){
+  alert("Hola");
+}
+var x=document.getElementsByTagName('input');
+for (var i=0;i<x.length;i++){
+  //Event Handler
+  //x[i].onclick=prueba;
+  //Event Listener
+  x[i].addEventListener('click',prueba);
+  x[i].addEventListener('click',prueba2);
+}

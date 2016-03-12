@@ -1,0 +1,26 @@
+#bt2{
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  margin-left:200px;
+  margin-top:200px;
+  font-size:25px;
+}
+
+body{
+  background-image:url(image/NBA-Globe.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+}
+
+#dialog > input{
+  width: 75%;
+  margin-top: 3%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#btn{
+  cursor: pointer;
+}

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery UI Example Page</title>
+	<link href="css/smoothness/jquery-ui-1.10.1.custom.css" rel="stylesheet">
+	<script src="js/jquery-1.9.1.js"></script>
+	<script src="js/jquery-ui-1.10.1.custom.js"></script>
+
+<script type="text/javascript">
+ $(function(){ 
+ var pickerOpts = {
+    onSelect: function(dateText, inst) {
+        alert($( "myDate" ).datepicker( 'getDate' ));
+		alert(dateText);
+    }
+};
+$("#myDate").datepicker(pickerOpts); 
+}); 
+</script> 
+
+
+</head>
+<body>
+
+<label>Introduce una fecha: </label>
+<input id="myDate" /> 
+<input type="button" onclick="alert($(#myDate).text())"
+</body>
+</html>

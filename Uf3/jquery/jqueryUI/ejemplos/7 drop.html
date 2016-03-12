@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery UI Example Page</title>
+	<link href="css/smoothness/jquery-ui-1.10.1.custom.css" rel="stylesheet">
+	<script src="js/jquery-1.9.1.js"></script>
+	<script src="js/jquery-ui-1.10.1.custom.js"></script>
+
+<script type="text/javascript">
+ $(function(){ 
+var dragOpts = {
+ handle: "#handle"
+};
+	$("#drag").draggable(dragOpts);
+	$("#myDrop").droppable();
+}); 
+</script> 
+<style>
+#handle {
+   cursor: move;
+   background: blue;
+}
+#drag {
+	width:20%;
+	background: red;
+	color: white;
+}
+
+#myDrop {
+	width:400px;
+	height:200px;
+	border:3px solid #000;
+	position:absolute;
+	right:20px;
+	top:20px; 
+	z-index:1;
+}
+</style>
+
+</head>
+<body>
+<div id="drag">
+<div id="handle">Menu</div>
+Esto es un div que se puede arrastrar
+</div>
+<div id="myDrop"></div>
+
+
+</body>
+</html>

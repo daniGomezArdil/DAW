@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			canvas{
+					border:1px solid black;
+			}
+		</style>
+		<meta charset="utf-8">
+		<title>Index</title>
+	</head>
+	<body>
+		<canvas id="mycanvas" width="500px" height="800px">
+		</canvas>
+		<script type="text/javascript">
+			var canvas=document.getElementById("mycanvas");
+			var ctx=canvas.getContext("2d");
+			var degradado2=ctx.createRadialGradient(290,320,40,200,400,200);
+			degradado2.addColorStop(0,"blue");
+			degradado2.addColorStop(0.5,"red");
+			degradado2.addColorStop(0.9,"blue");
+			degradado2.addColorStop(1,"yellow");
+			ctx.fillStyle=degradado2;
+			ctx.fillRect(0,0,400,800);
+		</script>
+	</body>
+</html>

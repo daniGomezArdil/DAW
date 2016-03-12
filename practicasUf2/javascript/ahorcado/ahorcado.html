@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>sense títol</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="generator" content="Geany 1.23.1" />
+		<script type="text/javascript" src="funciones.js"></script>
+	<style>
+		canvas{
+			border:1px solid black;
+		}
+	</style>
+</head>
+
+<body>
+	<canvas id="gambas" width="500px" height="500px"></canvas>
+	<br>
+	<input id = "inicio" type="button" value="iniciar" onclick="iniciar();"></input> 
+	<input id = "inicio" type="button" value="borrar" onclick="bc();"></input> 
+	<br />
+	<script type="text/javascript">
+		var i;
+		for (i = 0; i < 26; i++){
+			if (i%13 ==0){
+				document.write("<br />");
+			}
+			var letra =String.fromCharCode(65+i);
+			document.write("<input id=\""+letra+"\" type=BUTTON value="+letra+" onclick=enviar(\""+letra+"\")>");
+		}
+	</script>
+</body>
+
+</html>

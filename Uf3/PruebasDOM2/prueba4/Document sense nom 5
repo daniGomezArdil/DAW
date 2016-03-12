@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+  http://jsbin.com/guhomekapi/1/edit
+<input type="button" value="prueba1"  id="miBoton"/>
+  <input type="button" value="prueba2"  id="miBoton2"/>
+</body>
+</html>

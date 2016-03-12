@@ -1,0 +1,23 @@
+tablero del juego:
+
+array en memoria
+
+hacer una matrix 8 * 8.
+o vector de 64 casillas.
+
+-colocar minas en memoria:
+codificar poniendo una M=mina , random para colocar al azar
+no se puede repetir minas en la misma posicion.
+
+-Calcularbombascerca:
+colocar el numero en las casillas que tienen bombas al lado.
+(1,2,3,4,5,6  o  0) nº de bombas (M) 
+una variable que es disparado=-1.
+
+pintar tablero del juego:
+mirar las cordenadas
+el canvas multiplo de 8 640x640 casillas 80x80
+son las cordenadas * la media de la casillas.
+
+trabajar con la arrey en memoria o matriz
+colocar bombas al azar y pintar

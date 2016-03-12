@@ -1,0 +1,24 @@
+h1{
+	font-size: 74px;
+	font-family: fantasy;
+}
+
+.una{
+	color:green;
+}
+
+.dos{
+	color:yellow;
+}
+
+.tres{
+	color:red;
+}
+
+.cuatro{
+	color:blue;
+}
+
+canvas{
+					border:1px solid black;
+			}

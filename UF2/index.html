@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			canvas{
+					border:1px solid black;
+			}
+		</style>
+		<meta charset="utf-8">
+		<title>Index</title>
+	</head>
+	<body>
+		<canvas id="mycanvas" width="500px" height="500px">
+		</canvas>
+		<script type="text/javascript">
+			var canvas=document.getElementById("mycanvas");
+			var ctx=canvas.getContext("2d");
+			ctx.strokeRect(10,10,50,20);
+			ctx.fillRect(10,50,50,20);
+			ctx.fillStyle="rgb(200,0,0)";
+			ctx.strokeStyle="rgb(0,0,200)";
+			ctx.strokeRect(100,10,50,20);
+			ctx.fillRect(100,50,50,20);
+			ctx.lineWidth=5;
+			ctx.strokeRect(200,10,50,20);
+			var degradado1=ctx.createLinearGradient(10,0,0,500);
+			degradado1.addColorStop(0,'#FF2323');
+			degradado1.addColorStop(0.5,'#23FF00');
+			degradado1.addColorStop(0.75,'#55FF00');
+			degradado1.addColorStop(1,'#FFFFFF');
+			ctx.fillStyle=degradado1;
+			ctx.fillRect(0,0,500,500);
+			
+		</script>
+	</body>
+</html>

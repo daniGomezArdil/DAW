@@ -1,0 +1,31 @@
+document.---getElementById
+			getElementsByTagName
+			getElementByName
+-----------------------------------------------------------------------
+querySelector
+querySelectorAll
+-----------------------------------------------------------------------
+getElementsByClassName
+-----------------------------------------------------------------------
+createElement (p,div,img,.....)
+createTextNode(nodos de textos)
+createAttr(atributos)
+-----------------------------------------------------------------------
+innerHTML
+outerHTML
+-----------------------------------------------------------------------
+*{
+	background-color:red;
+}
+
+#mydiv{
+	background-color:blue;//Se aplica este que concreta mas.
+}
+
+div{
+	background-color:yellow;
+}
+
+.clase{
+	background-color:green;
+}

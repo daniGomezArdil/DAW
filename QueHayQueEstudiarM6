@@ -1,0 +1,29 @@
+FECHAS:
+- Construir fechas (new)
+- Obtener cualquier parte de una fecha (getters)
+- Modificar cualquier parte de una fecha (setters)
+
+MATH:
+- Redondear (floor, cell, round)
+- Aleatorios (random)
+
+STRING:
+- propiedad length
+- Obtener una parte del string (substring, substr, slice)
+- charAt i charCodeAt
+- pasar mayusculas a minusculas
+- localizar texto dentro del string (indexOf, lasIndexOf)
+
+WINDOW:
+- Dialogos (alert, confirm, prompt)
+- Intervalos y temporizadores (setInterval, setTimeOut, clearInterval, clearTimeOut)
+- Abrir nuevas ventanas (open)
+- Cerrar ventanas (close)
+
+DOCUMENT:
+- Escribir en el documento (write) incluyendo en el documento de otras ventanas
+
+ALMACENAMIENTO:
+- LocalStorage (al menos una forma de consultar y guardar informacion)
+- SessionStorage (al menos una forma de consultar y guardar informacion)
+

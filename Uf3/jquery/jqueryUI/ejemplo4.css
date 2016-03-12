@@ -1,0 +1,15 @@
+#barra{
+	cursor: move;
+	background: blue;
+}
+#drag {
+	width:20%;
+	background: red;
+	color: white;
+}
+
+#container {
+	width:80%;
+	height: 500px;
+	background: grey;
+}

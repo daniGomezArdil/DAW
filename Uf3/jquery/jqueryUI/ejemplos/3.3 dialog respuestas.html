@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery UI Example Page</title>
+	<link href="css/smoothness/jquery-ui-1.10.1.custom.css" rel="stylesheet">
+	<script src="js/jquery-1.9.1.js"></script>
+	<script src="js/jquery-ui-1.10.1.custom.js"></script>
+
+<script>
+$(function(){
+	var execute = function(){
+		var answer = $("#respuesta").val();
+		$("<p>").text("Thanks for selecting " + answer).appendTo($("body"));
+		$("#myDialog").dialog("close");
+	}
+	var cancel = function() {
+		$("#myDialog").dialog("close");
+	}
+	var dialogOpts = {
+		buttons: {
+			"Ok": execute,
+			"Cancel": cancel
+		}
+	};
+	$("#myDialog").dialog(dialogOpts);
+});
+</script>
+
+
+</head>
+<body>
+<p>Please answer the opinion poll:
+</p>
+<div id="myDialog" title="Introduce tus datos">
+<p>Introduce los datos a continuación</p>
+email: <input type="text" id="respuesta" />
+</div>
+<input type="button" onclick="muestra()">
+</body>
+</html>

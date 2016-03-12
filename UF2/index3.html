@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			canvas{
+					border:1px solid black;
+			}
+		</style>
+		<meta charset="utf-8">
+		<title>Index</title>
+	</head>
+	<body>
+		<canvas id="mycanvas" width="500px" height="500px">
+		</canvas>
+		<script type="text/javascript">
+			var canvas=document.getElementById("mycanvas");
+			var ctx=canvas.getContext("2d");
+			ctx.beginPath();
+			ctx.arc(100,50,50,0,2*Math.PI);
+			ctx.fillStyle="#FFE4B5";
+			ctx.fill();
+			
+			ctx.beginPath();
+			ctx.arc(100,300,40,0,2*Math.PI);
+			ctx.fillStyle="EB1414";
+			ctx.fill();
+
+
+			ctx.beginPath();
+			ctx.strokeStyle="#C00";
+			ctx.lineWidth=3;
+			ctx.arc(100,50,20,0, Math.PI);
+			ctx.stroke();
+			
+			ctx.beginPath();
+			ctx.arc(100,190,110,0,2*Math.PI);
+			ctx.fillStyle="#FFE4B5";
+			ctx.fill();
+			
+			ctx.beginPath();
+			ctx.strokeStyle="#C00";
+			ctx.lineWidth=3;
+			ctx.arc(100,100,50,0, Math.PI);
+			ctx.stroke();
+			
+			ctx.font="30px  Verdana" ;
+			ctx.fillText(" Hola!",200 ,50);
+			/*ctx.beginPath();
+			ctx.moveTo(250,50);
+			ctx.lineTo(50,250);
+			ctx.lineTo(450,250);
+			ctx.lineTo(250,50);
+			ctx.fill();*/
+		</script>
+	</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<style>
+
+label {
+  display: block;
+  margin: 10px 0 0 0;
+}
+
+.boton{
+    margin: 10px 0 0 0;
+}
+
+</style>
+<meta charset="utf-8">
+<script type="text/javascript" src="validar.js">
+</script>
+
+</HEAD>
+<BODY>
+	<label for="tdni"> DNI</label>
+	<input type="text" id="tdni" />
+	<br />
+
+	<label for="tnombre"> Nombre</label>
+	<input type="text" id="tnombre" />
+	<br />
+
+	<label for="temail"> Email</label>
+	<input type="text" id="temail" />
+	<br />
+
+	<label> Condiciones</label>
+	<input type="radio" value="Si" name="cond">Acepto las condiciones <br />
+	<input type="radio" value="No" name="cond">No Acepto las condiciones <br />
+
+<label> Newsletter</label>
+<input type="checkbox" id="cnews" value="Si">Deseo suscribirme al newsletter <br />
+
+<input type="button" class="boton" id="bvalidar" value="validar">
+</BODY>
+
+</script>
+</HTML>

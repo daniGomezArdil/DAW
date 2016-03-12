@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+	<head>
+		<title>BuscaMinas</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<link rel="stylesheet" href="css/estilo.css">
+		<link rel="shortcut icon" href="img/bomba.png" type="image/png">
+	</head>
+
+	<body>
+		<header>
+			<h1>Buscaminas</h1>
+		</header>
+		<nav>
+			<ul>
+				<li><input  class="dificultad" type="button" value="Facil" onclick="iniciar(1)"></li>
+				<li><input  class="dificultad" type="button" value="Medio" onclick="iniciar(2)"></li>
+				<li><input  class="dificultad" type="button" value="Dificil" onclick="iniciar(3)"></li>
+				<li><input  class="dificultad" type="button" value="Personalizado" onclick="iniciar(4)"></li>
+				<li><input  class="dificultad" type="button" value="Debug" onclick="explotarTodos()"></li>
+				<li><input  class="dificultad" type="button" value="Borrar puntuaciones" onclick="borrarPuntuaciones()"></li>
+			</ul>
+		</nav>
+		<section id="superior">
+				<input  id ="reset" type="image" src="img/smile.png" alt="Reiniciar" width="50" height="50">
+				<span id ="temporizador">000</span>
+		</section>
+		<section id ="contenido">
+				<canvas id="tablero" width="400px" height="400px"></canvas>
+				<section id="botones"></section>
+		</section>
+		<footer>
+			<section>
+				<h2>Top 10</h2>
+			</section>
+			<table border="1">
+				<thead>
+					<tr>
+						<th scope="col">Posicion</th>
+						<th scope="col">Nombre</th>
+						<th scope="col">Puntuacion</th>
+					</tr>
+				</thead>
+				<tbody id="tabla">
+				</tbody> 
+			</table>
+		</footer>
+		<script type="text/javascript" src="js/funcionesTiempo.js"></script>
+		<script type="text/javascript" src="js/funcionesCanvas.js"></script>
+		<script type="text/javascript" src="js/funcionesBotones.js"></script>
+		<script type="text/javascript" src="js/funcionesPuntos.js"></script>
+		<script type="text/javascript" src="js/funcionesJuego.js"></script>
+	</body>
+</html>

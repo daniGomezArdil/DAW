@@ -1,0 +1,19 @@
+/* *****************************************************
+//    INS JOAN D'AUSTRIA
+//	CFGS 1ºDAW
+//	M2: Bases de dades. UF2: Llenguatge SQL
+//	PRÀCTICA UF2. FASE 
+//	AUTOR: Daniel Gómez Ardil
+//	DATA: 21/01/2015
+****************************************************** */
+
+/* Pregunta 1 */
+
+CREATE TABLE EQUIPO (
+		nombre varchar2 (20);
+		ciudad varchar2 (20) NOT NULL ;
+		conferencia char (4) NOT NULL ;
+		division varchar2 (9) NOT NULL 
+);
+
+CREATE 

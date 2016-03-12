@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery UI Example Page</title>
+	<link href="css/smoothness/jquery-ui-1.10.1.custom.css" rel="stylesheet">
+	<script src="js/jquery-1.9.1.js"></script>
+	<script src="js/jquery-ui-1.10.1.custom.js"></script>
+
+<script type="text/javascript">
+ $(function(){ 
+ sliderOpts = {
+	values: [0, 10],
+	range:true,
+	min: 0,
+	max: 10,
+	change: function(event, ui) {
+		var min = ui.values[0];
+		var max = ui.values[1];
+		$("#valor").html("max: " + max + ", min: "+ min);
+	}
+};
+$("#mySlider").slider(sliderOpts);
+}); 
+</script> 
+
+
+</head>
+<body>
+
+<div id="mySlider">
+</div>
+<p id="valor"></p>
+</body>
+</html>

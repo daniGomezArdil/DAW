@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RetoqueFotos</title>
+	<style>
+		canvas{
+			border: 1px solid black;
+		}
+	</style>
+		<script type="text/javascript" src="js/funciones.js" > </script> 
+</head>
+<body>
+	<div>
+		<img src="img/alfa.jpg" id="laimagen"/>
+	</div>
+	<hr />
+	<div>
+		<input type="button" value="Reset" onclick="reset()">
+		<input type="button" value="Full" onclick="full()">
+		<input type="button" value="Zoom" onclick="zoom()">
+		<input type="button" value="inforPixel" onclick="infoPixel()">
+		<input type="button" value="ColorAleatorios" onclick="colorAle()">
+		<input type="button" value="Puzzle" onclick="puzzle()">
+	</div>
+	<hr />
+	<div>
+		<canvas id="foto" width="700" height="700"></canvas>
+	</div>
+	<script type="text/javascript">
+		inicializar();
+	</script>
+	
+</body>
+
+</html>

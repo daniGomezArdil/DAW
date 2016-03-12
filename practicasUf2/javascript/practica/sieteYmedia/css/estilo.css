@@ -1,0 +1,68 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #F2F2F2;
+	padding: 5px;
+	max-width:960px;
+	min-width:800px;
+	margin: 0.25em auto;
+	font-size: 2em;
+}
+h1{
+	text-align:center;
+	color:#F60;
+	margin:0.25em auto;/*box model hay que verlo */
+	text-shadow:5px 5px 10px rgba(0,0,0,0.5);
+}
+#contenido{
+	display:inline-block;
+	margin:0.25em auto;
+	max-width:960px;
+	padding:0.25em;
+	width:100%;
+}
+#contenido * {
+	display:inline-block;
+	vertical-align:top;
+	padding:0.25em;
+}
+
+nav ul li{
+	list-style: none;
+	display:inline;
+}
+
+.controles{
+	border:none;
+	background:transparent;
+	margin:0.25em auto;
+	font-family:"digital";
+	padding:20px;
+	font-size:1em;
+	color:white;
+}
+
+.controles:hover{
+	color:#2E9AFE;
+}
+nav, footer section h2{
+	background:#848484;
+	text-align:center;
+	border-radius: 25px;
+	min-height:1em;
+	padding-top:10px;
+	text-align:center;
+	color:white;
+}
+
+header{
+	margin-bottom:1em;
+}
+
+canvas{
+	background:url(../img/tablero.png)center no-repeat;
+	background-size:contain;
+}

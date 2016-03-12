@@ -1,0 +1,113 @@
+/* problema 1 */
+
+CREATE TABLE Clients (
+	Codi_cli number(5,0),
+	Nom_cli varchar2(30) NOT NULL,
+	NIF char(10),
+	Adreca varchar2(30),
+	Ciutat varchar2(30),
+	Telefon char(12),
+	CONSTRAINT PK_Clients PRIMARY KEY (Codi_cli)
+);
+
+/* problema 2 */
+
+CREATE TABLE Projectes (
+	Codi_proj number (3,0),
+	Nom_proj varchar2 (20) NOT NULL,
+	Preu number(10,2) NOT NULL,
+	Data_inici date NOT NULL,
+	Data_prev_fi date NOT NULL,
+	Retencio number (2,0),
+	Codi_cli number (5,0),
+	CONSTRAINT PK_Projectes PRIMARY KEY (Codi_proj)
+);
+
+/* problema 3 */
+
+CREATE TABLE Departaments (
+	Nom_dpt varchar2 (20),
+	Ciutat_dpt varchar2 (20),
+	Telefon number (9,0) NOT NULL,
+	CONSTRAINT PK_Departaments PRIMARY KEY (Nom_dpt,Ciutat_dpt)
+);
+
+/* problema 4 */
+
+CREATE TABLE Empleats (
+	Codi_empl number (3,0),
+	Nom_empl varchar2 (20),
+	Cognom_empl varchar2 (20),
+	Sou number (8,2) NOT NULL,
+	Nom_dpt varchar2 (20),
+	Ciutat_dpt varchar2 (20),
+	Codi_proj number (3,0),
+	CONSTRAINT PK_Empleats PRIMARY KEY (Codi_empl)
+);
+
+/* problema 5 */
+ALTER TABLE Empleats
+	MODIFY Nom_empl varchar2(20) NOT NULL;
+
+ALTER TABLE Empleats
+	MODIFY Cognom_empl varchar2(20) NOT NULL;	
+
+/* problema 6 */
+
+ALTER TABLE Empleats
+	MODIFY Cognom_empl varchar2 (50);
+	
+/* problema 7 */
+
+ALTER TABLE Empleats
+	MODIFY Sou number (8,2) DEFAULT 641.50 ;
+	
+/* problema 8 */
+
+ALTER TABLE Projectes
+	DROP COLUMN Retencio;
+	
+/* problema 9 */
+
+ALTER TABLE Departaments
+	MODIFY Telefon char (12) ;
+	
+/* problema 10 */
+
+ALTER TABLE Projectes
+ADD	CHECK (Data_inici < Data_prev_fi);
+
+/*  problema 11 */
+
+ALTER TABLE Empleats
+	CONSTRAINT FK_Codi_proj FOREIGN KEY (Codi_proj)
+		REFERENCES Projectes (Codi_proj)
+			ON DELETE SET NULL;
+
+/* problema 12,13 */
+
+ALTER TABLE EMPLEATS
+	ADD CONSTRAINT FKdepartaments FOREIGN KEY (nom_dpt, ciutat_dpt)
+	REFERENCES departaments (nom_dpt,ciutat_dpt);
+	
+/* 	EXERCICI 14	*/
+
+ALTER TABLE CLIENTS
+	ADD CONSTRAINT UN_NIF UNIQUE (NIF);			
+
+
+
+
+		
+
+
+
+
+
+	
+
+
+
+
+
+

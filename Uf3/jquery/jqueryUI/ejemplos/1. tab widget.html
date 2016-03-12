@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery UI Example Page</title>
+	<link href="jqueryUi/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+	<script src="jqueryUi/external/jquery/jquery.js"></script>
+    <script src="jqueryUi/jquery-ui.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		$("#myTabs").tabs();		
+	});
+	</script>
+
+<style>
+#myTabs {
+width:400px; padding:5px; border:1px solid #636363;
+background:red none;
+}
+.ui-widget-header {
+border:0; background:#c2c2c2 none; font-family:Georgia;
+}
+#myTabs .ui-widget-content {
+border:1px solid #aaa; background:#fff none; font-size:80%;
+}
+.ui-state-default, .ui-widget-content .ui-state-default {
+border:1px solid #636363; background:#a2a2a2 none;
+}
+.ui-state-active, .ui-widget-content .ui-state-active {
+border:1px solid #aaa; background:#fff none;
+}
+</style>
+</head>
+<body>
+<div id="myTabs">
+	<ul>
+	<li><a href="#a">Tab 1</a></li>
+	<li><a href="#b">Tab 2</a></li>
+	</ul>
+	<div id="a">Contenido del Tab 1.</div>
+	<div id="b">Contenido del Tab 2</div>
+</div>
+
+
+
+</body>
+</html>

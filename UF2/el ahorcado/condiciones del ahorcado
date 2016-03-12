@@ -1,0 +1,29 @@
+una array con cinco palabras
+
+selecicionara una palabra aleatoriamente
+
+una vez selecionada la palabra colocar los espacios en vacio de la palabra selecionada
+
+se pondran las letras para selecionar en bottons / 28 letras-28 bottons
+
+el usuario ira pulsando segun la letra que quiera colocar
+
+una vez pulsada la letra esta pasara por una funcion donde se mirar si esta la letras:
+	-Si esta la letra esta se pondra en el sitio donde le corresponde
+	-Sino esta se ira colocando uno a uno las partes del cuerpo del ahorcado que seran:
+			- Cabeza
+			- Tronco
+			- Pierna Izq
+			- Pierna Der
+		    - Brazo Izq
+		    - Brazo Der
+		    - GAME OVER
+		
+variables globales: -array palabras
+				    -numfallos		
+				    
+funciones x=obtenerPalabra();
+		  pintarEspacios(palabra);
+		  buscar(letra);
+		  pintarFallo(numfallos);
+		  pintarletra(letra,posicion);

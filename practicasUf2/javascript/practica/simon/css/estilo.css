@@ -1,0 +1,25 @@
+.jumbotron{
+	background: #0489B1;
+	
+}
+body{
+	background: #E0F2F7;
+}
+
+.btn{
+	border-radius: 0px;
+}
+/*
+#contenido * {
+	padding: 5px;
+	display:block;
+}
+
+#superior {
+	color:red;
+	font-size:50px;
+	font-family: 'Press Start 2P', cursive;
+	margin-left: 80px;
+}
+
+*/

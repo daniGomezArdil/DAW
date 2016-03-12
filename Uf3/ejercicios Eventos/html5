@@ -1,0 +1,60 @@
+FORMULARIOS HTML 5 ---------------------------------->
+
+< input type=X />
+
+a) X = email //lo que hace es validar si es un mail.lo procesa el navegador.
+(no funciona ni IE , ni Safari.)
+
+b) X = Url // Sintacticamente (no funciona ni IE , ni Safari.)
+
+c) X = Fechas (Date) //te pone el calendario ((Mirar can i use pagina) no funciona ni IE , ni en firefox
+
+d) X = DateTime // te da fecha y hora ((Mirar cai use pagina) no funciona ni IE , ni en firefox
+
+e) X = Month // te da solo el mes ,se envia como numero 1,...,12 ((Mirar can i use pagina) no funciona ni IE , ni en firefox
+
+f) X = week // el numero de la semana se envia 2016-w06 ((Mirar can i use pagina) no funciona ni IE , ni en firefox)
+
+g) X = number // solo permite poner numeros,Podemos añadir min= o max= o step= ((Mirar can i use pagina) no funciona ni IE , ni en firefox)
+
+h) X = Rango (Range)// te mueves entre unos topes acepta max= , min= , step= ((Mirar can i use pagina) no funciona ni IE , ni en firefox)
+
+i) X = color //te da a elegir un color ((Mirar can i use pagina) no funciona ni IE , ni en firefox)
+
+j) X = Listas // para hacer busquedas <input type=text   > 
+										< datalist id="milista">
+											<option label="ASIX" value="ASIX">
+											<option label="DAW" value="DAW">
+										</ datalist>
+
+Todos los elementos soportan :
+el atributo
+	Required ------>// Obliga a que tenga un valor donde lo pongas.
+	
+	placeholder --->// Te pone lo que puedes poner dentro de donde lo vas a poner.
+	
+	pattern ------->// lista ->[]: [abc]--> admite una 'a' , 'b' o 'c'.
+								   [^abc]--> niega , todo menos 'a', 'b' o 'c'.
+								   [A-Z]--> limita en el codio ASCII.
+								   [0-9]=[1234567890].
+								   Para repetir un patron [0-9]{8} // lo repetira 8 veces.
+								   
+								   	www.html5pattern.com(mirar).
+
+Modificar CSS ----------------------->
+
+input :invalid {
+	poner l que quieras en css
+}
+
+input :required {
+	poner lo que quieras en css
+}
+
+input :valid {
+	poner lo que quieras en css
+}
+
+								   
+	
+	 

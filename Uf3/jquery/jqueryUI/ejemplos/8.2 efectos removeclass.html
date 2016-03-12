@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery UI Example Page</title>
+	<link href="css/smoothness/jquery-ui-1.10.1.custom.css" rel="stylesheet">
+	<script src="js/jquery-1.9.1.js"></script>
+	<script src="js/jquery-ui-1.10.1.custom.js"></script>
+
+<script type="text/javascript">
+ $(function(){ 
+	$("#b1").click(function(event){
+		$("#myDiv").addClass( "newClass", 1000,vuelve );
+		
+	});
+	function vuelve() {
+	setTimeout(function() {
+	$( "#myDiv" ).removeClass( "newClass" );
+	}, 1500 );
+}
+}); 
+</script> 
+<style>
+#myDiv {
+    width: 300px;
+    height: 100px;
+    background:green;
+	color: white;
+}
+.newClass { 
+	margin-top:300px;
+	margin-left:300px;
+}
+</style>
+
+</head>
+<body>
+<div id="myDiv">
+Esto es un div al que aplicar efectos
+</div>
+<input type="button" id="b1" value="prueba" />
+
+
+
+</body>
+</html>

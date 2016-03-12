@@ -1,0 +1,9 @@
+var prueba=function(){
+      this.value="polsan";
+};
+
+var x=document.getElementsByTagName('input');
+for (var i=0;i<x.length;i++){
+  x[i].onclick=prueba;  
+}
+
